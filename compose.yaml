@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=sbc-tickets'
+      - 'POSTGRES_PASSWORD=secretfordevelopment'
+      - 'POSTGRES_USER=userfordevelopment'
+    ports:
+      - '5432'
